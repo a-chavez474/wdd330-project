@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/car-logo.png" alt="Car Rental Logo" style="width: 150px;">
+        </picture>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="active"><a href="checkout.html">Check Out</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="content">
+
+        <form class="form">
+        <fieldset>
+            <legend>Payment</legend>
+            <label for="cardNumber">Card Number</label>
+            <input min="16" max="16" name="cardNumber" required/>
+            <label for="expiration">Expiration</label>
+            <input name="expiration" required/> <br>
+            <label min="3" for="code">Security Code</label>
+            <input name="code" required/>
+          </fieldset>
+          <fieldset class="checkoutSummary">
+            <legend>Order Summary</legend>
+            <ul>
+              <li>
+                <label for="subTotal">Subtotal(<span id="quantity"></span>)</label>
+                <div name="cartTotal" id="cartTotal"></div>
+              </li>
+              <li>
+                <label for="extras">Extras</label>
+                <div name="extras" id="extras"></div>
+              </li>
+              <li>
+                <label for="tax">Tax</label>
+                <div name="tax" id="tax"></div>
+              </li>
+              <li>
+                <label for="orderTotal"><b>Order Total</b></label>
+                <div name="orderTotal" id="orderTotal"></div>
+              </li>
+            </ul>
+          </fieldset>
+          <button id="checkoutButton" type="submit">Checkout</button>
+        </form>
+          
+        </section>
+    </main>
+    <footer>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="copyright">
+            <h4>Let's go Car Rental &copy; 2022 - Not a real business</h4>
+        </div>
+        
+        
+    </footer>
+
+
+</body>
+
+</html>

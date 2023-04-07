@@ -1,0 +1,23 @@
+[
+    {
+        "name": "InkPactPress",
+        "address":"474 S. Main Street Bountiful,UT 84010",
+        "phoneNumber": "801.294.0887",
+        "website": "https://inkpactpress.com/",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Chuck-A-Rama",
+        "address":"212 S. 500 W. Bountiful,UT 84010",
+        "phoneNumber": "801.295.1127",
+        "website": "https://www.chuck-a-rama.com/bountiful",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Cafe Rio Mexican Restaurant",
+        "address":"550 W S. 500 S. Bountiful,UT 84010",
+        "phoneNumber": "801.383.6500",
+        "website": "https://www.caferio.com/locations/bountiful",
+        "membershipLevel": "Silver"
+    }
+]

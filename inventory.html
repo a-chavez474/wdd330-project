@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/car-logo.png" alt="Car Rental Logo" style="width: 150px;">
+        </picture>
+
+        <a href="index.html " title="Go to login screen">Logout</a>
+
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="inventory.html">Inventory</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="checkout.html">Check Out</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="content">
+        <div class="card">
+            <div class="date">
+                <img src="images/car.jpg" alt="InkPact Logo" />
+                <h3>Sedan</h3>
+                <label>Starting Date</label>
+                <input type="date" placeholder="Date" required>
+                <br>
+                <label>Finish Date</label>
+                <input type="date" placeholder="Date" required>
+            </div>
+            <br>
+            <div class="button-box">
+                <a class="rent" href="checkout.html">checkout</a>
+            </div>
+
+        </div>
+        </section>
+    </main>
+    <footer>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="copyright">
+            <h4>Let's go Car Rental &copy; 2022 - Not a real business</h4>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>

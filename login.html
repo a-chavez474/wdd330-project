@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/car-logo.png" alt="Car Rental Logo" style="width: 150px;">
+        </picture>
+
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li class="active"><a href="login.html">Login</a></li>
+            <li><a href="checkout.html">Check Out</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="content">
+        <form  class="form" method="post" action="index.html" id="login">
+
+            <label for="clientEmail">Email</label>
+            <br>
+            <input type="email" id="clientEmail"  name="clientEmail"  placeholder="Enter a valid email address" required >
+            <?php if(isset($clientEmail))
+            //{echo "value='$clientEmail'";}
+            ?>
+
+            <br>
+            <label for="clientPassword">Password</label>
+            <br>
+            <input type="password" id="clientPassword" name="clientPassword" required
+            pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+            <!--<label>&nbsp;</label>-->
+            <br>
+            <br>
+            <button type="submit" form="login" value="login">Login</button>
+            <input type="hidden" name="action" value="login">
+            <br>
+            <p>No Account?<a href="registration.html" 
+            title="Go to Account Registration Screen">Create One!</a></p>
+
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="copyright">
+            <h4>Let's go Car Rental &copy; 2022 - Not a real business</h4>
+        </div>
+    </footer>
+</body>
+</html>
